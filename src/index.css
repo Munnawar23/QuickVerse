@@ -1,6 +1,11 @@
 @import "tailwindcss";
-:root{
-    font-family: "Noto Sans", sans-serif;
-    background-color: #Ffffed;
+
+:root {
+  font-family: "Noto Sans", sans-serif;
+  background-color: #ffffed; /* Ensure this has a valid hex code */
 }
 
+::selection {
+  background-color: #cc0000;; /* Red background for selection */
+  color: #ffffff; /* White text for better contrast */
+}

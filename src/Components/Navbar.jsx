@@ -48,18 +48,18 @@ const Navbar = () => {
   };
   return (
     <>
-      <nav className="fixed z-10 w-full border-b pt-2 border-orange-50/10 bg-[#ffffed]">
+      <nav className="fixed z-10 w-full border-b pt-2 border-orange-50/10 bg-yellow-100">
         <div className="container mx-auto px-4">
-          <div className="flex h-16 items-center justify-between">
+          <div className="flex h-18 items-center justify-between">
             <div className="flex items-center">
               <a href="/">
-                <img src={logo} alt="QuickVerse" height={0} width={60} />
+                <img src={logo} alt="QuickVerse" height={0} width={70} />
               </a>
             </div>
             <button
               onClick={() => setIsOpen(!isOpen)}
               type="button"
-              className="inline-flex items-center justify-center p-2 text-[#8F1413]"
+              className="inline-flex items-center justify-center p-2 text-[#103e60] text-xl"
             >
               <RiMenu3Line />
             </button>
@@ -73,7 +73,7 @@ const Navbar = () => {
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: "-100%" }}
             transition={{ duration: 0.5 }}
-            className="fixed inset-0 z-20 flex flex-col space-y-8 bg-[#ffffad] px-20 pt-32 text-5xl font-black uppercase text-[#8F1413] lg:text-6xl"
+            className="fixed inset-0 z-20 flex flex-col space-y-8 bg-yellow-100 px-20 pt-32 text-5xl font-black uppercase text-[#103e60] lg:text-6xl"
           >
             <button
               onClick={() => setIsOpen(false)}
@@ -91,7 +91,7 @@ const Navbar = () => {
                 key={link.id}
                 href={`#${link.id}`} 
                 onClick={(e) => handleLinkClick(e, link.id)}
-                className="transition-colors duration-500 items-center justify-center flex hover:text-[#103e60]"
+                className="transition-colors duration-500 items-center justify-center flex hover:text-[#cc0000]"
               >
                 {link.name}
               </motion.a>

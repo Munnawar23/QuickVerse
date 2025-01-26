@@ -34,7 +34,7 @@ const Services = () => {
             <p className='text-lg tracking-tighter lg:text-2xl'>{activeTab.description}</p>
           </div>
           <div className='p-4 lg:w-1/2'>
-            <img src={activeTab.image} alt={activeTab.title} className=' rounded-lg lg:h-[400px] lg:w-[500px] h-auto w-full' />
+            <img src={activeTab.image} alt={activeTab.title} className=' rounded-lg lg:h-[400px] lg:w-[500px] h-[300px] w-full ' />
           </div>
         </motion.div>
       </div>
