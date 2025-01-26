@@ -1,9 +1,9 @@
 import React from 'react'; 
 import { motion } from 'framer-motion';
-import aboutVideo from '../assets/drone.mp4';  
+import pizza from '../assets/pizza.jpg'; // pizza image
 
 const About = () => { 
-    const videoVariants = {
+    const imageVariants = {
         hidden: { opacity: 0, y: 50 },
         visible: { opacity: 1, y: 0 }
     };
@@ -29,16 +29,14 @@ const About = () => {
             > 
                 <motion.div 
                     className="mb-8 lg:mb-0" 
-                    variants={videoVariants} 
+                    variants={imageVariants} 
                     transition={{ duration: 0.8, delay: 0.2 }}
                 > 
-                    <motion.video
-                        src={aboutVideo}
-                        alt="About QuickVerse"
-                        className='w-[600px] h-[300px] lg:w-[1000px] lg:h-[500px] object-cover'
-                        autoPlay 
-                        loop 
-                        muted
+                    {/* Replaced video with image and added motion variants */}
+                    <motion.img
+                        src={pizza}  // Use the pizza image here
+                        alt="Pizza"
+                        className='w-[600px] h-[300px] lg:w-[980px] lg:h-[400px] object-cover'
                     />
                 </motion.div> 
                 <motion.p 

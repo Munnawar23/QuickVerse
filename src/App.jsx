@@ -1,6 +1,6 @@
 import React from 'react'
 import Navbar from './Components/Navbar'
-import Hero from './Sections/Hero'
+import Home from './Sections/Home'
 import About from './Sections/About'
 import Campuses from './Sections/Campuses'
 import Reviews from './Sections/Reviews'
@@ -12,7 +12,7 @@ const App = () => {
   return (
     <main className='text-neutral-800 overflow-x-hidden antialiased'>
       <Navbar />
-      <Hero />
+      <Home />
       <About />
       <Services />
      <Campuses />
