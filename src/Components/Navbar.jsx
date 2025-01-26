@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import logo from "../assets/logo.PNG";
+import logo from "../assets/logo.png";
 import { LINKS } from "../Data/navlinks";
 import { RiCloseLine, RiMenu3Line } from "@remixicon/react";
 import { AnimatePresence, motion } from "framer-motion";
