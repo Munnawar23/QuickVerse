@@ -48,7 +48,7 @@ const Navbar = () => {
   };
   return (
     <>
-      <nav className="fixed z-10 w-full border-b pt-2 border-orange-50/10 bg-[#ffffad]">
+      <nav className="fixed z-10 w-full border-b pt-2 border-orange-50/10 bg-[#ffffed]">
         <div className="container mx-auto px-4">
           <div className="flex h-16 items-center justify-between">
             <div className="flex items-center">
@@ -73,7 +73,7 @@ const Navbar = () => {
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: "-100%" }}
             transition={{ duration: 0.5 }}
-            className="fixed inset-0 z-20 flex flex-col space-y-8 bg-[#8F1413] px-20 pt-32 text-5xl font-black uppercase text-[#ffffff] lg:text-6xl"
+            className="fixed inset-0 z-20 flex flex-col space-y-8 bg-[#ffffad] px-20 pt-32 text-5xl font-black uppercase text-[#8F1413] lg:text-6xl"
           >
             <button
               onClick={() => setIsOpen(false)}
