@@ -5,7 +5,7 @@ const Reviews = () => {
   return (
     <section className='max-w-7xl mx-auto border-b-2' id='reviews'>
       <div className="my-10">
-        <h2 className='text-3xl text-[#8F1413] lg:font-extrabold font-bold tracking-tighter lg:text-4xl text-center uppercase mb-4 lg:mb-12'>Reviews</h2>
+        <h2 className='text-3xl text-[#103e60] lg:font-extrabold font-bold tracking-tighter lg:text-4xl text-center uppercase mb-4 lg:mb-12'>Reviews</h2>
         <div className="flex flex-wrap justify-center">
           {REVIEWS.map((review, index) => (
             <div

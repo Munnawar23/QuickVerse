@@ -16,7 +16,7 @@ const About = () => {
     return ( 
         <section className='max-w-7xl mx-auto border-b-2 mt-10 ' id='about'> 
             <h2 
-                className='text-3xl text-[#8F1413] font-extrabold tracking-tighter lg:text-4xl text-center uppercase mb-8 mx-4'
+                className='text-3xl text-[#103e60] font-extrabold tracking-tighter lg:text-4xl text-center uppercase mb-8 mx-4'
             > 
                 why quick-verse 
             </h2> 
@@ -54,15 +54,15 @@ const About = () => {
                     transition={{ duration: 0.8, delay: 0.6 }}
                 > 
                     <div className="text-center"> 
-                        <h3 className="text-2xl lg:text-3xl text-[#8F1413] font-semibold">22,000+</h3> 
+                        <h3 className="text-2xl lg:text-3xl text-[#103e60] font-semibold">22,000+</h3> 
                         <p className="text-sm lg:text-lg text-[#103e60]">Orders Delivered</p> 
                     </div> 
                     <div className="text-center"> 
-                        <h3 className="text-2xl lg:text-3xl text-[#8F1413] font-semibold">85+</h3> 
+                        <h3 className="text-2xl lg:text-3xl text-[#103e60] font-semibold">85+</h3> 
                         <p className="text-sm lg:text-lg text-[#103e60]">Total Vendors</p> 
                     </div> 
                     <div className="text-center"> 
-                        <h3 className="text-2xl lg:text-3xl text-[#8F1413] font-semibold">10+</h3> 
+                        <h3 className="text-2xl lg:text-3xl text-[#103e60] font-semibold">10+</h3> 
                         <p className="text-sm lg:text-lg text-[#103e60]">Total Campuses</p> 
                     </div> 
                 </motion.div> 

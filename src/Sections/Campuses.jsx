@@ -6,7 +6,7 @@ const Campuses = () => {
   return (
     <section className="max-w-7xl mx-auto border-b-2" id="campuses">
       <div className="lg:my-20 my-10">
-        <h2 className="text-3xl lg:text-4xl text-[#8F1413] font-bold sm:font-extrabold tracking-tighter text-center uppercase mb-20">
+        <h2 className="text-3xl lg:text-4xl text-[#103e60] font-bold sm:font-extrabold tracking-tighter text-center uppercase mb-20">
           Our Top Campuses
         </h2>
         {SERVICES_CONTENT.map((services, index) => (
@@ -40,7 +40,7 @@ const Campuses = () => {
               <ul className="flex flex-col gap-2">
                 {services.highlights.map((highlight, idx) => (
                   <li key={idx} className="flex items-center text-lg lg:text-xl">
-                    <i className="ri-checkbox-circle-fill text-[#8F1413] mr-2"></i>
+                    <i className="ri-checkbox-circle-fill text-[#103e60] mr-2"></i>
                     {highlight}
                   </li>
                 ))}
