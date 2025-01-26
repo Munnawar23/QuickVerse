@@ -9,7 +9,7 @@ const Contact = () => {
             <p className='max-w-2xl lg:text-2xl text-xl mb-12 text-center mx-auto'>
                 {CONTACT_INFO.text}
             </p>
-          <div className="flex flex-col lg:flex-row justify-around mx-4 text-[#103e60]">
+          <div className="flex flex-col lg:flex-row justify-around mx-4 text-[#8F1413]">
             <div className="flex mb-8 lg:mb-0">
                 <RiPhoneLine className='text-3xl mr-4' />
                 <div className="">

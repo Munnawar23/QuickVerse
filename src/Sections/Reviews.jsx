@@ -10,7 +10,7 @@ const Reviews = () => {
           {REVIEWS.map((review, index) => (
             <div
               key={index}
-              className="mt-10 flex flex-col items-center justify-center rounded-2xl border border-neutral-300 p-10 mx-2 max-w-xs"
+              className="mt-10 flex flex-col items-center justify-center rounded-2xl border border-[#8F1413] p-10 mx-2 max-w-xs"
             >
               {/* Text section with fixed height and dynamic resizing */}
               <div className="h-52 overflow-hidden">
