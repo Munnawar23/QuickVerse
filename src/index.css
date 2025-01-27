@@ -6,6 +6,6 @@
 }
 
 ::selection {
-  background-color: #cc0000;; /* Red background for selection */
-  color: #ffffff; /* White text for better contrast */
+  background: none;
+  color: inherit;
 }
