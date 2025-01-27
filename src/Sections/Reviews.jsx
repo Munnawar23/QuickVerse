@@ -1,17 +1,29 @@
 import React from "react";
-import { TESTIMONIALS } from "../Data/reviews";
+import { REVIEW_DATA } from "../Data/reviews";
+import { motion } from "framer-motion";
 
 const Reviews = () => {
   return (
     <section className="max-w-7xl mx-auto px-8 lg:py-20 py-10 border-b-2" id="reviews">
-      <h2 className="text-3xl text-[#103e60] font-extrabold tracking-tighter lg:text-4xl text-center uppercase mb-8 mx-4">
+      <motion.h2
+        className="text-3xl text-[#103e60] font-extrabold tracking-tighter lg:text-4xl text-center uppercase mb-8 mx-4"
+        initial={{ opacity: 0, y: 50 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.8, ease: "easeInOut" }}
+        viewport={{ once: true }}
+      >
         What People Say
-      </h2>
+      </motion.h2>
+      
       <div className="containers mx-auto flex flex-wrap gap-8">
-        {TESTIMONIALS.map((testimonial, index) => (
-          <div
+        {REVIEW_DATA.map((testimonial, index) => (
+          <motion.div
             key={index}
             className={`rounded-3xl p-4 ${testimonial.bgColor} ${testimonial.textColor} flex min-w-[250px] h-[450px] flex-1 flex-col items-center justify-between`}
+            initial={{ opacity: 0, y: 50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, ease: "easeInOut", delay: index * 0.2 }} 
+            viewport={{ once: true }}
           >
             {/* Image */}
             <img
@@ -30,7 +42,7 @@ const Reviews = () => {
               <p className="font-bold">{testimonial.author}</p>
               <p className="text-sm">{testimonial.title}</p>
             </div>
-          </div>
+          </motion.div>
         ))}
       </div>
     </section>

@@ -11,7 +11,7 @@ import Footer from "./Sections/Footer";
 
 const App = () => {
   return (
-    <main className="text-neutral-800 overflow-x-hidden antialiased">
+    <main className="scroll-smooth overflow-x-hidden antialiased">
       <Navbar />
       <Home />
       <About />

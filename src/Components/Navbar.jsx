@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
-import logo from "../assets/logo.png";
-import { LINKS } from "../Data/navlinks";
+import logo from "../assets/logo.webp";
+import { navLinks } from "../Data/navlinks";
 import { RiCloseLine, RiMenu3Line } from "@remixicon/react";
 import { AnimatePresence, motion } from "framer-motion";
 
@@ -46,23 +46,32 @@ const Navbar = () => {
     hidden: { opacity: 0, y: 20 },
     visible: { opacity: 1, y: 0 },
   };
+
   return (
     <>
       <nav className="fixed z-10 w-full border-b pt-2 border-orange-50/10 bg-yellow-100">
         <div className="container mx-auto px-4">
-          <div className="flex h-18 items-center justify-between">
+          <div className="flex h-16  items-center justify-between">
             <div className="flex items-center">
-              <a href="/">
-                <img src={logo} alt="QuickVerse" height={0} width={70} />
-              </a>
+              <motion.a
+                initial={{ opacity: 0, y: "-50%" }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.5 }}
+                href="/"
+              >
+                <img src={logo} className="pb-2" alt="QuickVerse" width={75} />
+              </motion.a>
             </div>
-            <button
+            <motion.button
+              initial={{ opacity: 0, y: "-50%" }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5, delay: 0.5 }}
               onClick={() => setIsOpen(!isOpen)}
               type="button"
               className="inline-flex items-center justify-center p-2 text-[#103e60] text-xl"
             >
               <RiMenu3Line />
-            </button>
+            </motion.button>
           </div>
         </div>
       </nav>
@@ -82,14 +91,14 @@ const Navbar = () => {
             >
               <RiCloseLine />
             </button>
-            {LINKS.map((link, index) => (
+            {navLinks.map((link, index) => (
               <motion.a
                 variants={linkVarient}
                 initial="hidden"
                 animate="visible"
                 transition={{ duration: 0.5, delay: index * 0.2 }}
                 key={link.id}
-                href={`#${link.id}`} 
+                href={`#${link.id}`}
                 onClick={(e) => handleLinkClick(e, link.id)}
                 className="transition-colors duration-500 items-center justify-center flex hover:text-[#cc0000]"
               >

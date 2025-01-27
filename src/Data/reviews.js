@@ -1,9 +1,9 @@
-import person1 from '../assets/person1.png';
-import person2 from '../assets/person2.png';
-import person3 from '../assets/person3.png';
-import person4 from '../assets/person4.png';
+import person1 from '../assets/person1.webp';
+import person2 from '../assets/person2.webp';
+import person3 from '../assets/person3.webp';
+import person4 from '../assets/person4.webp';
 
-export const TESTIMONIALS = [
+export const REVIEW_DATA = [
   {
     text: "QuickVerse has been a great aid in getting items delivered at your place, especially on days when you're unwell or in case of emergencies.",
     author: "Anjali Kaur",

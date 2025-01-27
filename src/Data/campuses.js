@@ -1,8 +1,8 @@
-import gits from "../assets/gits.jpeg";
-import iimu from "../assets/iim.jpg";
+import gits from "../assets/gits.webp";
+import iimu from "../assets/iim.webp";
 import pcu from "../assets/pcu.webp";
 
-export const SERVICES_CONTENT = [
+export const CAMPUSES_DATA = [
   {
     title: "GITS UDAIPUR",
     description:

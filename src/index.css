@@ -1,8 +1,8 @@
-@import "tailwindcss";
+@import "tailwindcss"; 
 
 :root {
   font-family: "Noto Sans", sans-serif;
-  background-color: #ffffed; /* Ensure this has a valid hex code */
+  background-color: #ffffed; 
 }
 
 ::selection {

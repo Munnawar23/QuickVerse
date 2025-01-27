@@ -1,7 +1,7 @@
-import foodImage from "../assets/food.jpg";
-import medicineImage from "../assets/medicine.jpg";
-import laundryImage from "../assets/laundry.jpg";
-import groceryImage from "../assets/grocery.png";
+import foodImage from "../assets/food.webp";
+import medicineImage from "../assets/medicine.webp";
+import laundryImage from "../assets/laundry.webp";
+import groceryImage from "../assets/grocery.webp";
 
 export const SERVICES = [
   {
@@ -33,7 +33,7 @@ export const SERVICES = [
     title: "Grocery",
     content: "Shop for groceries from the comfort of your campus.",
     description:
-      "QuickVerse brings grocery services to campuses, delivering essential groceries directly to students' doors for added convenience.",
+      "QuickVerse brings grocery services to campuses, delivering essential groceries directly to students' doors.",
     image: groceryImage,
   },
 ];
